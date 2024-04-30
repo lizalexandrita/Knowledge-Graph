@@ -1,0 +1,3356 @@
+{
+    "nodes": [
+        {
+            "id": "n0",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "18396",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.4856",
+                "distance_mibig": "0.7729",
+                "name": "BATS_SAMN07137064_METAG-scaffold_143-biosynth_1"
+            }
+        },
+        {
+            "id": "n1",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_16",
+                "gcf": "gcf_1778",
+                "gcc_prevalence": "0.7563",
+                "gcc_to_refseq": "0.5287",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137064_METAG_DMDDONGP"
+            }
+        },
+        {
+            "id": "n2",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "betalactone"
+            }
+        },
+        {
+            "id": "n3",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__SAR86;f__D2472;g__D2472;s__"
+            }
+        },
+        {
+            "id": "n4",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "18367",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3492",
+                "distance_mibig": "0.7274",
+                "name": "BATS_SAMN07137064_METAG-scaffold_272-biosynth_1"
+            }
+        },
+        {
+            "id": "n5",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_10",
+                "gcf": "gcf_682",
+                "gcc_prevalence": "0.999",
+                "gcc_to_refseq": "0.1702",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137064_METAG_HKFEGBEL"
+            }
+        },
+        {
+            "id": "n6",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n7",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G11;s__"
+            }
+        },
+        {
+            "id": "n8",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "14119",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2155",
+                "distance_mibig": "0.4259",
+                "name": "BATS_SAMN07137064_METAG-scaffold_291-biosynth_1"
+            }
+        },
+        {
+            "id": "n9",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_4895",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137064_METAG_FGANEJMB"
+            }
+        },
+        {
+            "id": "n10",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n11",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__HIMB59;f__HIMB59;g__HIMB59;s__"
+            }
+        },
+        {
+            "id": "n12",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "15827",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "true",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.105",
+                "distance_mibig": "0.4406",
+                "name": "BATS_SAMN07137064_METAG-scaffold_353-biosynth_1"
+            }
+        },
+        {
+            "id": "n13",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_92",
+                "gcf": "gcf_1454",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1189",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137064_METAG_HKFEGBEL"
+            }
+        },
+        {
+            "id": "n14",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "T3PKS"
+            }
+        },
+        {
+            "id": "n15",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G11;s__"
+            }
+        },
+        {
+            "id": "n16",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "11735",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3218",
+                "distance_mibig": "0.5821",
+                "name": "BATS_SAMN07137064_METAG-scaffold_572-biosynth_1"
+            }
+        },
+        {
+            "id": "n17",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_911",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137064_METAG_BDCGNAHA"
+            }
+        },
+        {
+            "id": "n18",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n19",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__UBA7446;s__UBA7446 sp002862705"
+            }
+        },
+        {
+            "id": "n20",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "12579",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3703",
+                "distance_mibig": "0.4992",
+                "name": "BATS_SAMN07137065_METAG-scaffold_161-biosynth_1"
+            }
+        },
+        {
+            "id": "n21",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_162",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_BBAKFGPG"
+            }
+        },
+        {
+            "id": "n22",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n23",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002718995"
+            }
+        },
+        {
+            "id": "n24",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "21287",
+                "bgc_complete": "true",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.7291",
+                "name": "BATS_SAMN07137065_METAG-scaffold_2-biosynth_1"
+            }
+        },
+        {
+            "id": "n25",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_10",
+                "gcf": "gcf_648",
+                "gcc_prevalence": "0.999",
+                "gcc_to_refseq": "0.1702",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_FHDKGKFO"
+            }
+        },
+        {
+            "id": "n26",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n27",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B"
+            }
+        },
+        {
+            "id": "n28",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "9923",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.4851",
+                "distance_mibig": "0.7577",
+                "name": "BATS_SAMN07137065_METAG-scaffold_270-biosynth_1"
+            }
+        },
+        {
+            "id": "n29",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_55",
+                "gcf": "gcf_1015",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.2956",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_FEGJLPHI"
+            }
+        },
+        {
+            "id": "n30",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "betalactone"
+            }
+        },
+        {
+            "id": "n31",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__TMED189 sp003282445"
+            }
+        },
+        {
+            "id": "n32",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6393",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.6428",
+                "name": "BATS_SAMN07137065_METAG-scaffold_436-biosynth_1"
+            }
+        },
+        {
+            "id": "n33",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_1290",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_FHDKGKFO"
+            }
+        },
+        {
+            "id": "n34",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n35",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B"
+            }
+        },
+        {
+            "id": "n36",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6999",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1959",
+                "distance_mibig": "0.3845",
+                "name": "BATS_SAMN07137065_METAG-scaffold_568-biosynth_1"
+            }
+        },
+        {
+            "id": "n37",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1396",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_MEBEGACD"
+            }
+        },
+        {
+            "id": "n38",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n39",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n40",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6177",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1386",
+                "distance_mibig": "0.315",
+                "name": "BATS_SAMN07137065_METAG-scaffold_725-biosynth_1"
+            }
+        },
+        {
+            "id": "n41",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1904",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137065_METAG_ABAKGCPO"
+            }
+        },
+        {
+            "id": "n42",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n43",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002501805"
+            }
+        },
+        {
+            "id": "n44",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6055",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2407",
+                "distance_mibig": "0.5342",
+                "name": "BATS_SAMN07137066_METAG-scaffold_526-biosynth_1"
+            }
+        },
+        {
+            "id": "n45",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_5057",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137066_METAG_LJHKJJLM"
+            }
+        },
+        {
+            "id": "n46",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n47",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__"
+            }
+        },
+        {
+            "id": "n48",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6007",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1879",
+                "distance_mibig": "0.3155",
+                "name": "BATS_SAMN07137066_METAG-scaffold_536-biosynth_1"
+            }
+        },
+        {
+            "id": "n49",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_612",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137066_METAG_GDNJGOAA"
+            }
+        },
+        {
+            "id": "n50",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n51",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Marinisomatota;c__Marinisomatia;o__Marinisomatales;f__TCS55;g__GCA-002701945;s__GCA-002701945 sp002701945"
+            }
+        },
+        {
+            "id": "n52",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "11415",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3525",
+                "distance_mibig": "0.5",
+                "name": "BATS_SAMN07137066_METAG-scaffold_89-biosynth_1"
+            }
+        },
+        {
+            "id": "n53",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1033",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137066_METAG_LJHKJJLM"
+            }
+        },
+        {
+            "id": "n54",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n55",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__"
+            }
+        },
+        {
+            "id": "n56",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "7327",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2851",
+                "distance_mibig": "0.3531",
+                "name": "BATS_SAMN07137067_METAG-scaffold_436-biosynth_1"
+            }
+        },
+        {
+            "id": "n57",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_366",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137067_METAG_JDJBBPNI"
+            }
+        },
+        {
+            "id": "n58",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n59",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__HIMB59;f__HIMB59;g__HIMB59;s__"
+            }
+        },
+        {
+            "id": "n60",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "13189",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.079",
+                "distance_mibig": "0.5134",
+                "name": "BATS_SAMN07137067_METAG-scaffold_66-biosynth_1"
+            }
+        },
+        {
+            "id": "n61",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_929",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137067_METAG_PDCABCCM"
+            }
+        },
+        {
+            "id": "n62",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n63",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Pelagibacterales;f__Pelagibacteraceae;g__Pelagibacter;s__Pelagibacter sp003209915"
+            }
+        },
+        {
+            "id": "n64",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "8295",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2821",
+                "distance_mibig": "0.3547",
+                "name": "BATS_SAMN07137068_METAG-scaffold_103-biosynth_1"
+            }
+        },
+        {
+            "id": "n65",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_5066",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137068_METAG_ALGCOOLA"
+            }
+        },
+        {
+            "id": "n66",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n67",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Chloroflexota;c__Dehalococcoidia;o__UBA1151;f__TMED-70;g__TMED-70;s__"
+            }
+        },
+        {
+            "id": "n68",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "7867",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1934",
+                "distance_mibig": "0.377",
+                "name": "BATS_SAMN07137068_METAG-scaffold_121-biosynth_1"
+            }
+        },
+        {
+            "id": "n69",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_704",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137068_METAG_ALGCOOLA"
+            }
+        },
+        {
+            "id": "n70",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n71",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Chloroflexota;c__Dehalococcoidia;o__UBA1151;f__TMED-70;g__TMED-70;s__"
+            }
+        },
+        {
+            "id": "n72",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5787",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.056",
+                "distance_mibig": "0.4158",
+                "name": "BATS_SAMN07137068_METAG-scaffold_243-biosynth_1"
+            }
+        },
+        {
+            "id": "n73",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1335",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137068_METAG_LOLAJNMN"
+            }
+        },
+        {
+            "id": "n74",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n75",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B"
+            }
+        },
+        {
+            "id": "n76",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "18061",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.4387",
+                "distance_mibig": "0.5816",
+                "name": "BATS_SAMN07137069_METAG-scaffold_13-biosynth_1"
+            }
+        },
+        {
+            "id": "n77",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1033",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137069_METAG_DGGBNFID"
+            }
+        },
+        {
+            "id": "n78",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n79",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__"
+            }
+        },
+        {
+            "id": "n80",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "22355",
+                "bgc_complete": "true",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.5288",
+                "distance_mibig": "0.6799",
+                "name": "BATS_SAMN07137070_METAG-scaffold_11-biosynth_1"
+            }
+        },
+        {
+            "id": "n81",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_654",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_APGOECFM"
+            }
+        },
+        {
+            "id": "n82",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n83",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O3;s__MGIIb-O3 sp001629235"
+            }
+        },
+        {
+            "id": "n84",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6189",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2913",
+                "distance_mibig": "0.3324",
+                "name": "BATS_SAMN07137070_METAG-scaffold_1127-biosynth_1"
+            }
+        },
+        {
+            "id": "n85",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_2893",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_LAFPDKBJ"
+            }
+        },
+        {
+            "id": "n86",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n87",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n88",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5304",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1719",
+                "distance_mibig": "0.2447",
+                "name": "BATS_SAMN07137070_METAG-scaffold_1468-biosynth_1"
+            }
+        },
+        {
+            "id": "n89",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_125",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_FECPJBHH"
+            }
+        },
+        {
+            "id": "n90",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n91",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Marinisomatota;c__Marinisomatia;o__Marinisomatales;f__TCS55;g__TMED108;s__TMED108 sp002725545"
+            }
+        },
+        {
+            "id": "n92",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "7601",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.0055",
+                "distance_mibig": "0.7224",
+                "name": "BATS_SAMN07137070_METAG-scaffold_213-biosynth_1"
+            }
+        },
+        {
+            "id": "n93",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_2984",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_FENLIEBD"
+            }
+        },
+        {
+            "id": "n94",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n95",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n96",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "13787",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.3982",
+                "distance_mibig": "0.6996",
+                "name": "BATS_SAMN07137070_METAG-scaffold_225-biosynth_1"
+            }
+        },
+        {
+            "id": "n97",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_77",
+                "gcf": "gcf_230",
+                "gcc_prevalence": "0.9653",
+                "gcc_to_refseq": "0.3524",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_KCHALCNA"
+            }
+        },
+        {
+            "id": "n98",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "phosphonate"
+            }
+        },
+        {
+            "id": "n99",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__UBA11654;s__UBA11654 sp001629325"
+            }
+        },
+        {
+            "id": "n100",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "12856",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.4973",
+                "distance_mibig": "0.7635",
+                "name": "BATS_SAMN07137070_METAG-scaffold_274-biosynth_1"
+            }
+        },
+        {
+            "id": "n101",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_55",
+                "gcf": "gcf_1015",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.2956",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_JCGCLGFK"
+            }
+        },
+        {
+            "id": "n102",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "betalactone"
+            }
+        },
+        {
+            "id": "n103",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__TMED189 sp003282445"
+            }
+        },
+        {
+            "id": "n104",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "17699",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.657",
+                "name": "BATS_SAMN07137070_METAG-scaffold_89-biosynth_1"
+            }
+        },
+        {
+            "id": "n105",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_444",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_FENLIEBD"
+            }
+        },
+        {
+            "id": "n106",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n107",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n108",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "10171",
+                "bgc_complete": "true",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.6124",
+                "name": "BATS_SAMN07137070_METAG-scaffold_99-biosynth_1"
+            }
+        },
+        {
+            "id": "n109",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_20",
+                "gcf": "gcf_644",
+                "gcc_prevalence": "0.9085",
+                "gcc_to_refseq": "0.1769",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137070_METAG_FENLIEBD"
+            }
+        },
+        {
+            "id": "n110",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n111",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n112",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5329",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.0952",
+                "distance_mibig": "0.69",
+                "name": "BATS_SAMN07137071_METAG-scaffold_1371-biosynth_1"
+            }
+        },
+        {
+            "id": "n113",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_10",
+                "gcf": "gcf_588",
+                "gcc_prevalence": "0.999",
+                "gcc_to_refseq": "0.1702",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_PONJEGOG"
+            }
+        },
+        {
+            "id": "n114",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n115",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n116",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "16181",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3881",
+                "distance_mibig": "0.5304",
+                "name": "BATS_SAMN07137071_METAG-scaffold_169-biosynth_1"
+            }
+        },
+        {
+            "id": "n117",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_4390",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_BHOICPJG"
+            }
+        },
+        {
+            "id": "n118",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n119",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n120",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "10522",
+                "bgc_complete": "true",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.1515",
+                "distance_mibig": "0.6765",
+                "name": "BATS_SAMN07137071_METAG-scaffold_198-biosynth_1"
+            }
+        },
+        {
+            "id": "n121",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_4350",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_PONJEGOG"
+            }
+        },
+        {
+            "id": "n122",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n123",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n124",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "12361",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1853",
+                "distance_mibig": "0.325",
+                "name": "BATS_SAMN07137071_METAG-scaffold_275-biosynth_1"
+            }
+        },
+        {
+            "id": "n125",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1248",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_OFBODDKM"
+            }
+        },
+        {
+            "id": "n126",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n127",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__MGIIa-K1;s__MGIIa-K1 sp12207u"
+            }
+        },
+        {
+            "id": "n128",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "20909",
+                "bgc_complete": "true",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.657",
+                "name": "BATS_SAMN07137071_METAG-scaffold_34-biosynth_1"
+            }
+        },
+        {
+            "id": "n129",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_444",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_PONJEGOG"
+            }
+        },
+        {
+            "id": "n130",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n131",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n132",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "22355",
+                "bgc_complete": "true",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.527",
+                "distance_mibig": "0.6763",
+                "name": "BATS_SAMN07137071_METAG-scaffold_6-biosynth_1"
+            }
+        },
+        {
+            "id": "n133",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_654",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_LMCBPIBL"
+            }
+        },
+        {
+            "id": "n134",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n135",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O3;s__MGIIb-O3 sp001629235"
+            }
+        },
+        {
+            "id": "n136",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "7403",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3077",
+                "distance_mibig": "0.3478",
+                "name": "BATS_SAMN07137071_METAG-scaffold_715-biosynth_1"
+            }
+        },
+        {
+            "id": "n137",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_2893",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_BHOICPJG"
+            }
+        },
+        {
+            "id": "n138",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n139",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n140",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "6744",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.1999",
+                "distance_mibig": "0.6006",
+                "name": "BATS_SAMN07137071_METAG-scaffold_870-biosynth_1"
+            }
+        },
+        {
+            "id": "n141",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_77",
+                "gcf": "gcf_384",
+                "gcc_prevalence": "0.9653",
+                "gcc_to_refseq": "0.3524",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_NOLODMIB"
+            }
+        },
+        {
+            "id": "n142",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "phosphonate"
+            }
+        },
+        {
+            "id": "n143",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__UBA11654;s__UBA11654 sp001629325"
+            }
+        },
+        {
+            "id": "n144",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "10171",
+                "bgc_complete": "true",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.6124",
+                "name": "BATS_SAMN07137071_METAG-scaffold_92-biosynth_1"
+            }
+        },
+        {
+            "id": "n145",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_20",
+                "gcf": "gcf_644",
+                "gcc_prevalence": "0.9085",
+                "gcc_to_refseq": "0.1769",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137071_METAG_PONJEGOG"
+            }
+        },
+        {
+            "id": "n146",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n147",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n148",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "27260",
+                "bgc_complete": "true",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.5395",
+                "distance_mibig": "0.6857",
+                "name": "BATS_SAMN07137072_METAG-scaffold_20-biosynth_1"
+            }
+        },
+        {
+            "id": "n149",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_4",
+                "gcf": "gcf_4968",
+                "gcc_prevalence": "0.4942",
+                "gcc_to_refseq": "0.5179",
+                "gcc_only_mag": "true",
+                "name": "BATS_SAMN07137072_METAG_DMGBPHJB"
+            }
+        },
+        {
+            "id": "n150",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "betalactone"
+            }
+        },
+        {
+            "id": "n151",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__SG8-23;f__UBA6960;g__UBA887;s__UBA887 sp002724575"
+            }
+        },
+        {
+            "id": "n152",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "11360",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.3004",
+                "distance_mibig": "0.5708",
+                "name": "BATS_SAMN07137072_METAG-scaffold_40-biosynth_1"
+            }
+        },
+        {
+            "id": "n153",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_5057",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137072_METAG_DGLHFLDN"
+            }
+        },
+        {
+            "id": "n154",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n155",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__Thalassarchaeum sp002714745"
+            }
+        },
+        {
+            "id": "n156",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "8452",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.1999",
+                "distance_mibig": "0.6835",
+                "name": "BATS_SAMN07137072_METAG-scaffold_591-biosynth_1"
+            }
+        },
+        {
+            "id": "n157",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_77",
+                "gcf": "gcf_6706",
+                "gcc_prevalence": "0.9653",
+                "gcc_to_refseq": "0.3524",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137072_METAG_CLCLKCAA"
+            }
+        },
+        {
+            "id": "n158",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "phosphonate"
+            }
+        },
+        {
+            "id": "n159",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__;s__"
+            }
+        },
+        {
+            "id": "n160",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5680",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2339",
+                "distance_mibig": "0.3928",
+                "name": "BATS_SAMN07137073_METAG-scaffold_1002-biosynth_1"
+            }
+        },
+        {
+            "id": "n161",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_3080",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_OPIJCGHA"
+            }
+        },
+        {
+            "id": "n162",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n163",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n164",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "15800",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "false",
+                "other": "true",
+                "distance_refseq": "0.5087",
+                "distance_mibig": "0.7688",
+                "name": "BATS_SAMN07137073_METAG-scaffold_109-biosynth_1"
+            }
+        },
+        {
+            "id": "n165",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_55",
+                "gcf": "gcf_1015",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.2956",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_OAACIELE"
+            }
+        },
+        {
+            "id": "n166",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "betalactone"
+            }
+        },
+        {
+            "id": "n167",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__"
+            }
+        },
+        {
+            "id": "n168",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5254",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2913",
+                "distance_mibig": "0.3324",
+                "name": "BATS_SAMN07137073_METAG-scaffold_1166-biosynth_1"
+            }
+        },
+        {
+            "id": "n169",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_2893",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_OPIJCGHA"
+            }
+        },
+        {
+            "id": "n170",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n171",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n172",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "13094",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1754",
+                "distance_mibig": "0.3114",
+                "name": "BATS_SAMN07137073_METAG-scaffold_155-biosynth_1"
+            }
+        },
+        {
+            "id": "n173",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1373",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_JMILPFGP"
+            }
+        },
+        {
+            "id": "n174",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n175",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G14;s__"
+            }
+        },
+        {
+            "id": "n176",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "7677",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0",
+                "distance_mibig": "0.4478",
+                "name": "BATS_SAMN07137073_METAG-scaffold_254-biosynth_1"
+            }
+        },
+        {
+            "id": "n177",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_393",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_JIPHEHIK"
+            }
+        },
+        {
+            "id": "n178",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n179",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__RCC307;s__"
+            }
+        },
+        {
+            "id": "n180",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "9746",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.2963",
+                "distance_mibig": "0.585",
+                "name": "BATS_SAMN07137073_METAG-scaffold_325-biosynth_1"
+            }
+        },
+        {
+            "id": "n181",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_5436",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_EDABFCCE"
+            }
+        },
+        {
+            "id": "n182",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n183",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002501805"
+            }
+        },
+        {
+            "id": "n184",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "10125",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.1515",
+                "distance_mibig": "0.6765",
+                "name": "BATS_SAMN07137073_METAG-scaffold_43-biosynth_1"
+            }
+        },
+        {
+            "id": "n185",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_4350",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_LGLLGDEG"
+            }
+        },
+        {
+            "id": "n186",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n187",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n188",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "5790",
+                "bgc_complete": "false",
+                "bgc_representative": "true",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "true",
+                "terpene": "false",
+                "other": "false",
+                "distance_refseq": "0.1375",
+                "distance_mibig": "0.729",
+                "name": "BATS_SAMN07137073_METAG-scaffold_965-biosynth_1"
+            }
+        },
+        {
+            "id": "n189",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_13",
+                "gcf": "gcf_854",
+                "gcc_prevalence": "0.9846",
+                "gcc_to_refseq": "0.1073",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137073_METAG_LGLLGDEG"
+            }
+        },
+        {
+            "id": "n190",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "bacteriocin"
+            }
+        },
+        {
+            "id": "n191",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845"
+            }
+        },
+        {
+            "id": "n192",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "15651",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.4141",
+                "distance_mibig": "0.448",
+                "name": "BATS_SAMN07137074_METAG-scaffold_162-biosynth_1"
+            }
+        },
+        {
+            "id": "n193",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1311",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137074_METAG_HDEINNNP"
+            }
+        },
+        {
+            "id": "n194",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n195",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025"
+            }
+        },
+        {
+            "id": "n196",
+            "labels": [
+                "BGC"
+            ],
+            "properties": {
+                "bgc_length": "13091",
+                "bgc_complete": "false",
+                "bgc_representative": "false",
+                "non_ribosomal_peptyde_synthestases": "false",
+                "type_i_polyketide_synthestases": "false",
+                "type_ii_iii_polyketide_synthestases": "false",
+                "ripps": "false",
+                "terpene": "true",
+                "other": "false",
+                "distance_refseq": "0.1754",
+                "distance_mibig": "0.3114",
+                "name": "BATS_SAMN07137074_METAG-scaffold_170-biosynth_1"
+            }
+        },
+        {
+            "id": "n197",
+            "labels": [
+                "Genome"
+            ],
+            "properties": {
+                "gcc": "gcc_14",
+                "gcf": "gcf_1373",
+                "gcc_prevalence": "1",
+                "gcc_to_refseq": "0.1927",
+                "gcc_only_mag": "false",
+                "name": "BATS_SAMN07137074_METAG_EHPJFMIB"
+            }
+        },
+        {
+            "id": "n198",
+            "labels": [
+                "product"
+            ],
+            "properties": {
+                "name": "terpene"
+            }
+        },
+        {
+            "id": "n199",
+            "labels": [
+                "Taxonomy"
+            ],
+            "properties": {
+                "name": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G14;s__"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "from": "BATS_SAMN07137064_METAG_DMDDONGP",
+            "to": "BATS_SAMN07137064_METAG-scaffold_143-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__SAR86;f__D2472;g__D2472;s__",
+            "to": "BATS_SAMN07137064_METAG-scaffold_143-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG-scaffold_143-biosynth_1",
+            "to": "betalactone",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG_HKFEGBEL",
+            "to": "BATS_SAMN07137064_METAG-scaffold_272-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G11;s__",
+            "to": "BATS_SAMN07137064_METAG-scaffold_272-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG-scaffold_272-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG_FGANEJMB",
+            "to": "BATS_SAMN07137064_METAG-scaffold_291-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__HIMB59;f__HIMB59;g__HIMB59;s__",
+            "to": "BATS_SAMN07137064_METAG-scaffold_291-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG-scaffold_291-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG_HKFEGBEL",
+            "to": "BATS_SAMN07137064_METAG-scaffold_353-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G11;s__",
+            "to": "BATS_SAMN07137064_METAG-scaffold_353-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG-scaffold_353-biosynth_1",
+            "to": "T3PKS",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG_BDCGNAHA",
+            "to": "BATS_SAMN07137064_METAG-scaffold_572-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__UBA7446;s__UBA7446 sp002862705",
+            "to": "BATS_SAMN07137064_METAG-scaffold_572-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137064_METAG-scaffold_572-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_BBAKFGPG",
+            "to": "BATS_SAMN07137065_METAG-scaffold_161-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002718995",
+            "to": "BATS_SAMN07137065_METAG-scaffold_161-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_161-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_FHDKGKFO",
+            "to": "BATS_SAMN07137065_METAG-scaffold_2-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B",
+            "to": "BATS_SAMN07137065_METAG-scaffold_2-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_2-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_FEGJLPHI",
+            "to": "BATS_SAMN07137065_METAG-scaffold_270-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__TMED189 sp003282445",
+            "to": "BATS_SAMN07137065_METAG-scaffold_270-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_270-biosynth_1",
+            "to": "betalactone",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_FHDKGKFO",
+            "to": "BATS_SAMN07137065_METAG-scaffold_436-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B",
+            "to": "BATS_SAMN07137065_METAG-scaffold_436-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_436-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_MEBEGACD",
+            "to": "BATS_SAMN07137065_METAG-scaffold_568-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137065_METAG-scaffold_568-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_568-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG_ABAKGCPO",
+            "to": "BATS_SAMN07137065_METAG-scaffold_725-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002501805",
+            "to": "BATS_SAMN07137065_METAG-scaffold_725-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137065_METAG-scaffold_725-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG_LJHKJJLM",
+            "to": "BATS_SAMN07137066_METAG-scaffold_526-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__",
+            "to": "BATS_SAMN07137066_METAG-scaffold_526-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG-scaffold_526-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG_GDNJGOAA",
+            "to": "BATS_SAMN07137066_METAG-scaffold_536-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Marinisomatota;c__Marinisomatia;o__Marinisomatales;f__TCS55;g__GCA-002701945;s__GCA-002701945 sp002701945",
+            "to": "BATS_SAMN07137066_METAG-scaffold_536-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG-scaffold_536-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG_LJHKJJLM",
+            "to": "BATS_SAMN07137066_METAG-scaffold_89-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__",
+            "to": "BATS_SAMN07137066_METAG-scaffold_89-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137066_METAG-scaffold_89-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137067_METAG_JDJBBPNI",
+            "to": "BATS_SAMN07137067_METAG-scaffold_436-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__HIMB59;f__HIMB59;g__HIMB59;s__",
+            "to": "BATS_SAMN07137067_METAG-scaffold_436-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137067_METAG-scaffold_436-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137067_METAG_PDCABCCM",
+            "to": "BATS_SAMN07137067_METAG-scaffold_66-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Alphaproteobacteria;o__Pelagibacterales;f__Pelagibacteraceae;g__Pelagibacter;s__Pelagibacter sp003209915",
+            "to": "BATS_SAMN07137067_METAG-scaffold_66-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137067_METAG-scaffold_66-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG_ALGCOOLA",
+            "to": "BATS_SAMN07137068_METAG-scaffold_103-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Chloroflexota;c__Dehalococcoidia;o__UBA1151;f__TMED-70;g__TMED-70;s__",
+            "to": "BATS_SAMN07137068_METAG-scaffold_103-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG-scaffold_103-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG_ALGCOOLA",
+            "to": "BATS_SAMN07137068_METAG-scaffold_121-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Chloroflexota;c__Dehalococcoidia;o__UBA1151;f__TMED-70;g__TMED-70;s__",
+            "to": "BATS_SAMN07137068_METAG-scaffold_121-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG-scaffold_121-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG_LOLAJNMN",
+            "to": "BATS_SAMN07137068_METAG-scaffold_243-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Prochlorococcus_B;s__Prochlorococcus_B marinus_B",
+            "to": "BATS_SAMN07137068_METAG-scaffold_243-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137068_METAG-scaffold_243-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137069_METAG_DGGBNFID",
+            "to": "BATS_SAMN07137069_METAG-scaffold_13-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__",
+            "to": "BATS_SAMN07137069_METAG-scaffold_13-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137069_METAG-scaffold_13-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_APGOECFM",
+            "to": "BATS_SAMN07137070_METAG-scaffold_11-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O3;s__MGIIb-O3 sp001629235",
+            "to": "BATS_SAMN07137070_METAG-scaffold_11-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_11-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_LAFPDKBJ",
+            "to": "BATS_SAMN07137070_METAG-scaffold_1127-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137070_METAG-scaffold_1127-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_1127-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_FECPJBHH",
+            "to": "BATS_SAMN07137070_METAG-scaffold_1468-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Marinisomatota;c__Marinisomatia;o__Marinisomatales;f__TCS55;g__TMED108;s__TMED108 sp002725545",
+            "to": "BATS_SAMN07137070_METAG-scaffold_1468-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_1468-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_FENLIEBD",
+            "to": "BATS_SAMN07137070_METAG-scaffold_213-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137070_METAG-scaffold_213-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_213-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_KCHALCNA",
+            "to": "BATS_SAMN07137070_METAG-scaffold_225-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__UBA11654;s__UBA11654 sp001629325",
+            "to": "BATS_SAMN07137070_METAG-scaffold_225-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_225-biosynth_1",
+            "to": "phosphonate",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_JCGCLGFK",
+            "to": "BATS_SAMN07137070_METAG-scaffold_274-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__TMED189 sp003282445",
+            "to": "BATS_SAMN07137070_METAG-scaffold_274-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_274-biosynth_1",
+            "to": "betalactone",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_FENLIEBD",
+            "to": "BATS_SAMN07137070_METAG-scaffold_89-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137070_METAG-scaffold_89-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_89-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG_FENLIEBD",
+            "to": "BATS_SAMN07137070_METAG-scaffold_99-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137070_METAG-scaffold_99-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137070_METAG-scaffold_99-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_PONJEGOG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_1371-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137071_METAG-scaffold_1371-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_1371-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_BHOICPJG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_169-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137071_METAG-scaffold_169-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_169-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_PONJEGOG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_198-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137071_METAG-scaffold_198-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_198-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_OFBODDKM",
+            "to": "BATS_SAMN07137071_METAG-scaffold_275-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__MGIIa-K1;s__MGIIa-K1 sp12207u",
+            "to": "BATS_SAMN07137071_METAG-scaffold_275-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_275-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_PONJEGOG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_34-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137071_METAG-scaffold_34-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_34-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_LMCBPIBL",
+            "to": "BATS_SAMN07137071_METAG-scaffold_6-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O3;s__MGIIb-O3 sp001629235",
+            "to": "BATS_SAMN07137071_METAG-scaffold_6-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_6-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_BHOICPJG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_715-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137071_METAG-scaffold_715-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_715-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_NOLODMIB",
+            "to": "BATS_SAMN07137071_METAG-scaffold_870-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__UBA11654;s__UBA11654 sp001629325",
+            "to": "BATS_SAMN07137071_METAG-scaffold_870-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_870-biosynth_1",
+            "to": "phosphonate",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG_PONJEGOG",
+            "to": "BATS_SAMN07137071_METAG-scaffold_92-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137071_METAG-scaffold_92-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137071_METAG-scaffold_92-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG_DMGBPHJB",
+            "to": "BATS_SAMN07137072_METAG-scaffold_20-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__SG8-23;f__UBA6960;g__UBA887;s__UBA887 sp002724575",
+            "to": "BATS_SAMN07137072_METAG-scaffold_20-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG-scaffold_20-biosynth_1",
+            "to": "betalactone",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG_DGLHFLDN",
+            "to": "BATS_SAMN07137072_METAG-scaffold_40-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__Thalassarchaeum;s__Thalassarchaeum sp002714745",
+            "to": "BATS_SAMN07137072_METAG-scaffold_40-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG-scaffold_40-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG_CLCLKCAA",
+            "to": "BATS_SAMN07137072_METAG-scaffold_591-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__UBA11654;f__UBA11654;g__;s__",
+            "to": "BATS_SAMN07137072_METAG-scaffold_591-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137072_METAG-scaffold_591-biosynth_1",
+            "to": "phosphonate",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_OPIJCGHA",
+            "to": "BATS_SAMN07137073_METAG-scaffold_1002-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137073_METAG-scaffold_1002-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_1002-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_OAACIELE",
+            "to": "BATS_SAMN07137073_METAG-scaffold_109-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Actinobacteriota;c__Acidimicrobiia;o__TMED189;f__TMED189;g__TMED189;s__",
+            "to": "BATS_SAMN07137073_METAG-scaffold_109-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_109-biosynth_1",
+            "to": "betalactone",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_OPIJCGHA",
+            "to": "BATS_SAMN07137073_METAG-scaffold_1166-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137073_METAG-scaffold_1166-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_1166-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_JMILPFGP",
+            "to": "BATS_SAMN07137073_METAG-scaffold_155-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G14;s__",
+            "to": "BATS_SAMN07137073_METAG-scaffold_155-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_155-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_JIPHEHIK",
+            "to": "BATS_SAMN07137073_METAG-scaffold_254-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__RCC307;s__",
+            "to": "BATS_SAMN07137073_METAG-scaffold_254-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_254-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_EDABFCCE",
+            "to": "BATS_SAMN07137073_METAG-scaffold_325-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O5;s__MGIIb-O5 sp002501805",
+            "to": "BATS_SAMN07137073_METAG-scaffold_325-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_325-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_LGLLGDEG",
+            "to": "BATS_SAMN07137073_METAG-scaffold_43-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137073_METAG-scaffold_43-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_43-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG_LGLLGDEG",
+            "to": "BATS_SAMN07137073_METAG-scaffold_965-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Cyanobacteria;c__Cyanobacteriia;o__Synechococcales;f__Cyanobiaceae;g__Synechococcus_C;s__Synechococcus_C sp002724845",
+            "to": "BATS_SAMN07137073_METAG-scaffold_965-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137073_METAG-scaffold_965-biosynth_1",
+            "to": "bacteriocin",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137074_METAG_HDEINNNP",
+            "to": "BATS_SAMN07137074_METAG-scaffold_162-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassoarchaeaceae;g__MGIIb-O1;s__MGIIb-O1 sp002497025",
+            "to": "BATS_SAMN07137074_METAG-scaffold_162-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137074_METAG-scaffold_162-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        },
+        {
+            "from": "BATS_SAMN07137074_METAG_EHPJFMIB",
+            "to": "BATS_SAMN07137074_METAG-scaffold_170-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__MED-G14;s__",
+            "to": "BATS_SAMN07137074_METAG-scaffold_170-biosynth_1",
+            "type": "CONTAINS"
+        },
+        {
+            "from": "BATS_SAMN07137074_METAG-scaffold_170-biosynth_1",
+            "to": "terpene",
+            "type": "PRODUCES"
+        }
+    ]
+}

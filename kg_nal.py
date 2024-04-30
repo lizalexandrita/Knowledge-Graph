@@ -387,12 +387,11 @@ class GraphGenerator:
                     # Assuming node_data is a dictionary with property values, including the 'id'
                     self.neo4j_conn.query(cypher_query, parameters=node_data)
 
-    def create_node_from_dict(self, tx, node_label: str, node_dict: dict):
+    def merge_node_from_dict(self, node_label: str, node_dict: dict={}):
         """
         Creates a node in the Neo4j database from a dictionary.
 
         Args:
-            tx (Transaction): The Neo4j transaction object.
             node_label (str): The label of the node to create.
             node_dict (dict): A dictionary containing the node properties.
 
@@ -406,63 +405,18 @@ class GraphGenerator:
             }
         """
         try:
-            tx.run(
+            self.neo4j_conn.query(
                 f"""
                 MERGE (n:{node_label} {{id: $id}})
                 SET n += $props
                 """,
-                id=node_dict["id"],
-                props=node_dict,
+                {"id": node_dict["id"], "props": node_dict},
             )
         except Exception as e:
             print("Execution had an error: ", e)
         
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_created
-        """).single()
-        nodes_created = result['nodes_created']
 
-        result = self.neo4j_conn.query("""
-            MATCH ()-[r]->()
-            RETURN count(r) AS relationships_created
-        """).single()
-        relationships_created = result['relationships_created']
-
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_matched
-        """).single()
-        nodes_matched = result['nodes_matched']
-
-        return {
-            'nodes_created': nodes_created,
-            'relationships_created': relationships_created,
-            'nodes_matched': nodes_matched
-        }
-
-    def generate_relationships(self, schema, data):
-        for edge_type, edge_properties in schema['relationships'].items():
-            for edge_data in data.get(edge_type, []):
-                source_id = edge_data['from']
-                target_id = edge_data['to']
-                set_clauses = []
-                for prop, value in edge_data.items():
-                    if prop not in ["from", "to"]:  # Exclude the source and target properties
-                        set_clauses.append(f"r.{prop} = ${prop}")
-                set_clause_str = ', '.join(set_clauses)
-                cypher_query = (
-                    f"MATCH (n), (m) "
-                    f"WHERE n.id = $source_id AND m.id = $target_id "
-                    f"MERGE (n)-[r:{edge_type}]->(m) "
-                    f"ON CREATE SET {set_clause_str} "
-                    f"ON MATCH SET {set_clause_str} "
-                    f"RETURN n, r, m"
-                )
-                params = {"from": source_id, "to": target_id, **edge_data}
-                self.neo4j_conn.query(cypher_query, parameters=params)
-
-    def create_relationship_from_node_to_node_by_id(self, tx, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict):
+    def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}):
         """
         Creates a relationship between two nodes in the Neo4j database by type.
 
@@ -474,54 +428,23 @@ class GraphGenerator:
             rel_props (dict): A dictionary containing the relationship properties.
 
         Returns:
-            dict: A dictionary containing the number of nodes created, relationships created, and nodes matched.
-            Example:
-            {
-                'nodes_created': 10,
-                'relationships_created': 5,
-                'nodes_matched': 3
-            }
+            None
         """
         try:
-            tx.run(
-                f"""
+            self.neo4j_conn.query(
+                """
                 MATCH (a), (b)
                 WHERE a.id = $from_node_id AND b.id = $to_node_id
-                MERGE (a)-[r:{rel_type}]->(b)
+                MERGE (a)-[r:%s]->(b)
                 SET r += $props
-                """,
-                from_node_id=from_node_id,
-                to_node_id=to_node_id,
-                props=rel_props,
+                """ % rel_type,
+                {"from_node_id": from_node_id, "to_node_id": to_node_id, "props": rel_props},
             )
         except Exception as e:
             print("Execution had an error: ", e)
 
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_created
-        """).single()
-        nodes_created = result['nodes_created']
-
-        result = self.neo4j_conn.query("""
-            MATCH ()-[r]->()
-            RETURN count(r) AS relationships_created
-        """).single()
-        relationships_created = result['relationships_created']
-
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_matched
-        """).single()
-        nodes_matched = result['nodes_matched']
-
-        return {
-            'nodes_created': nodes_created,
-            'relationships_created': relationships_created,
-            'nodes_matched': nodes_matched
-        }
     
-    def create_relationship_from_node_to_node_by_property(self, tx, from_node_label: str, to_node_label: str, from_property_name: str, to_property_name: str, rel_type: str, rel_props: dict):
+    def merge_relationship_from_node_to_node_by_property(self, from_node_label: str, to_node_label: str, from_property_name: str, to_property_name: str, rel_type: str, rel_props: dict):
         """
         Creates a relationship between two nodes in the Neo4j database based on a common property.
 
@@ -544,7 +467,7 @@ class GraphGenerator:
             }
         """
         try:
-            tx.run(
+            self.neo4j_conn.query(
                 f"""
                 MATCH (a:{from_node_label}), (b:{to_node_label})
                 WHERE a.{from_property_name} = b.{to_property_name}
@@ -556,29 +479,7 @@ class GraphGenerator:
         except Exception as e:
             print("Execution had an error: ", e)
 
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_created
-        """).single()
-        nodes_created = result['nodes_created']
-
-        result = self.neo4j_conn.query("""
-            MATCH ()-[r]->()
-            RETURN count(r) AS relationships_created
-        """).single()
-        relationships_created = result['relationships_created']
-
-        result = self.neo4j_conn.query("""
-            MATCH (n)
-            RETURN count(n) AS nodes_matched
-        """).single()
-        nodes_matched = result['nodes_matched']
-
-        return {
-            'nodes_created': nodes_created,
-            'relationships_created': relationships_created,
-            'nodes_matched': nodes_matched
-        }
+    
 
     def generate_constraints(self, schema):
         for constraint_name, constraint_data in schema['constraints'].items():
@@ -588,6 +489,7 @@ class GraphGenerator:
             self.neo4j_conn.query(cypher_query)
 
 
+# Data Parsing
 class ParseData:
 
     def extract_node_from_json(file_path: str, n: int = None) -> list[dict]:
@@ -680,142 +582,4 @@ class ParseData:
             for header in headers:
                 header = re.sub(r'[^\w]', '_', header)
         return headers
-
-
-# Let's test Jay's data schema
-def test_neo4j_operations(conn, csv_file_path):
-    try:
-        # Extract headers from the CSV
-        with open(csv_file_path, 'r') as file:
-            headers = file.readline().strip().split(',')
-
-        # Add a test property to each header as a node in Neo4j
-        conn.add_test_property(headers)
-
-        # Inspect the schema
-        schema_info = conn.inspect_schema()
-        print(schema_info)
-
-        # Delete the test data
-        conn.delete_test_data()
-        print("Test data deleted.")
-    finally: pass
-    #    conn.close()
-
-
-# Connection to Neo4j
-#password="july-bottles-tension"  # "FROM SANDBOX"
-#uri="bolt://44.222.238.169:7687"
-#user="neo4j"
-password="65465dsfg23480dkml2i38lkdsp923"  # "PASSWORD_IS_IN_BITWARDEN"
-uri="neo4j://neo4j.neo4j.svc.cluster.local:7687"
-user="neo4j"
-
-# Initialize connection
-conn = Neo4jConnection(uri, user, password)
-
-databases = conn.show_databases()
-
-for db in databases:
-    print(db)
-
-
-# Adapt CSV to graph using batch
-def adapt_csv_to_graph_with_batch(csv_file_path, schema_json_path, output_json_path, batch_size=None):
-    # Load schema from JSON file
-    with open(schema_json_path) as json_file:
-        schema = json.load(json_file)
-
-    nodes = []
-    relationships = []
-    i = 0  # Initialize a counter for custom ID generation
-
-    # Mapping from CSV column names to node property names
-    label_to_properties = {node['labels'][0]: node['properties'] for node in schema['nodes']}
-
-    # Process CSV file
-    with open(csv_file_path, newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for j, row in enumerate(reader):
-            if batch_size is not None and j >= batch_size:
-                break  # Stop processing if batch_size limit is reached
-
-            # For each node label found in label_to_properties, create a node
-            for label, properties in label_to_properties.items():
-                node_properties = {prop: row[prop] for prop in properties if prop in row}
-
-                # Add 'name' property based on the row's value for the node label if present
-                node_properties['name'] = row.get(label, "")
-
-                if node_properties:  # Check if there are any properties to add
-                    node = {
-                        "id": f"n{i}",  # Customized ID generation
-                        "labels": [label],
-                        "properties": node_properties
-                    }
-                    nodes.append(node)
-                    i += 1
-
-            # Assuming relationships are defined by the presence of specific columns
-            # This needs to be adapted based on a general logic to determine relationships from the schema and CSV
-            if 'Genome' in row and 'BGC' in row:
-                relationships.append({
-                    'from': row['Genome'],
-                    'to': row['BGC'],
-                    'type': 'CONTAINS'
-                })
-            if 'Taxonomy' in row and 'BGC' in row:
-                relationships.append({
-                    'from': row['Taxonomy'],
-                    'to': row['BGC'],
-                    'type': 'CONTAINS'
-                })
-            if 'product' in row and 'BGC' in row:
-                relationships.append({
-                    'from': row['BGC'],
-                    'to': row['product'],
-                    'type': 'PRODUCES'
-                })
-
-    # Create the output model
-    output_model = {
-        'nodes': nodes,
-        'relationships': relationships
-    }
-
-    # Write the output model to a JSON file
-    with open(output_json_path, 'w') as output_file:
-        json.dump(output_model, output_file, indent=4)
-
-    print(f"Adapted model with batch size {'all' if batch_size is None else batch_size} saved to {output_json_path}")
-
-
-# Push to Neo4J
-
-# Usage
-csv_file_path = 'data/Microbiomics_BGC_dataset_test.csv' # Update with actual path
-schema_json_path = 'schema.json' # Update with actual path
-output_json_path = 'payload.json' # Update with actual path
-batch_size = 10 # Set to None to process the whole CSV
-
-adapt_csv_to_graph_with_batch(csv_file_path, schema_json_path, output_json_path)
-
-# Initialize connection
-conn = Neo4jConnection(uri, user, password)
-
-gen_push = GraphGenerator(conn)
-
-
-gen_push.execute_from_json(output_json_path)
-
-conn.inspect_schema()
-
-query_test = "MATCH ()-[r:PRODUCES]->() RETURN count(r) AS total"
-#"MATCH (n) RETURN count(n) AS totalNodes"
-#"MATCH (n) OPTIONAL MATCH (n)-[r]-() RETURN n, r"
-
-conn.query(query_test)
-conn.show_databases()
-# Close the connection
-conn.close()
 

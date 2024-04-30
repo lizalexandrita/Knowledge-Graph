@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "labels": [
+        "BGC"
+      ],
+      "properties": {
+        "name":"",
+        "bgc_length": "",
+        "bgc_complete": "",
+        "bgc_representative": "",
+        "non_ribosomal_peptyde_synthestases": "",
+        "type_i_polyketide_synthestases": "",
+        "type_ii_iii_polyketide_synthestases": "",
+        "ripps": "",
+        "terpene": "",
+        "other": "",
+        "distance_refseq": "",
+        "distance_mibig": ""
+      }
+    },
+    {
+      "id": "n1",
+      "labels": [
+        "Genome"
+      ],
+      "properties": {
+        "name":"",
+        "gcc": "",
+        "gcf": "",
+        "gcc_prevalence": "",
+        "gcc_to_refseq": "",
+        "gcc_only_mag": ""
+      }
+    },
+    {
+      "id": "n2",
+      "labels": [
+        "product"
+      ],
+      "properties": {
+        "name":""}
+    },
+    {
+      "id": "n3",
+      "labels": [
+        "Taxonomy"
+      ],
+      "properties": {
+        "name":""}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n1",
+      "toId": "n0",
+      "type": "CONTAINS",
+      "properties": {}
+    },
+    {
+      "id": "n1",
+      "fromId": "n0",
+      "toId": "n2",
+      "type": "PRODUCES",
+      "properties": {}
+    },
+    {
+      "id": "n2",
+      "fromId": "n3",
+      "toId": "n0",
+      "type": "CONTAINS",
+      "properties": {}
+    }
+  ]
+}

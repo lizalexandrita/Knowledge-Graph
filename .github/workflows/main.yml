@@ -6,9 +6,6 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
     - name: Configure Safe Directory
       run: git config --global --add safe.directory /github/workspace
 
