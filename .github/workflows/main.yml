@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Mirror Repository
       uses: wei/git-sync@v1
-      with:
+      env:
         SOURCE: "https://github.com/lizalexandrita/Knowledge-Graph.git"
         DESTINATION: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
         SECRET_NAME: ${{ secrets.SSH_PRIVATE_KEY }}
