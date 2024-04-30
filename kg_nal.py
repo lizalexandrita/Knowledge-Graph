@@ -396,13 +396,7 @@ class GraphGenerator:
             node_dict (dict): A dictionary containing the node properties.
 
         Returns:
-            dict: A dictionary containing the number of nodes created, relationships created, and nodes matched.
-            Example:
-            {
-                'nodes_created': 10,
-                'relationships_created': 5,
-                'nodes_matched': 3
-            }
+            None
         """
         try:
             self.neo4j_conn.query(
@@ -458,13 +452,7 @@ class GraphGenerator:
             rel_props (dict): A dictionary containing the relationship properties.
 
         Returns:
-            dict: A dictionary containing the number of nodes created, relationships created, and nodes matched.
-            Example:
-            {
-                'nodes_created': 10,
-                'relationships_created': 5,
-                'nodes_matched': 3
-            }
+            None
         """
         try:
             self.neo4j_conn.query(

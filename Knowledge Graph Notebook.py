@@ -132,10 +132,11 @@ node_compound = [genn.merge_node_from_dict("Compound", compound) for compound in
 node_reaction = [genn.merge_node_from_dict("Reaction", reaction) for reaction in reactions]
 """
 
-# Create relationships
-genn = GraphGenerator(conn)
-# Create relationships between reaction node and compound nodes
 
+genn = GraphGenerator(conn)
+
+"""
+# Create relationships between reaction node and compound nodes
 # Access the database and parse all the reactions
 reactions = conn.query("MATCH (r:Reaction) RETURN r.compound_ids AS compound_ids, r.id AS reaction_id")
 
@@ -148,8 +149,25 @@ for reaction in reactions:
             'type': 'PARTICIPATES_IN'
         }
         genn.merge_relationship_from_node_to_node_by_id(compound_id, reaction_id, 'PARTICIPATES_IN', rel_props)
+"""
 
 
+# Create relationships between reaction nodes
+# Access the database and parse all the reactions
+reactions = conn.query("MATCH (r:Reaction) RETURN r.id AS reaction_id, r.linked_reaction AS linked_reaction")
+
+# Create relationships between reaction nodes
+for reaction in reactions:
+    try:
+        linked_reactions = reaction.get('linked_reaction', '').split(';')
+        reaction_id = reaction['reaction_id']
+        for linked_reaction in linked_reactions:
+            rel_props = {
+                'type': 'LINKED_TO'
+            }
+            genn.merge_relationship_from_node_to_node_by_id(reaction_id, linked_reaction, 'LINKED_TO', rel_props)
+    except Exception as e:
+        print("Execution Exception: ", e)  
 # Close the connection
 # conn.close()
 
