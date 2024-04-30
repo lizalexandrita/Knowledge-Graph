@@ -11,6 +11,6 @@ jobs:
     - name: Mirror Repository
       uses: wei/git-sync@v1
       with:
-        SOURCE_REPO: "https://github.com/lizalexandrita/Knowledge-Graph.git"
-        DESTINATION_REPO: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE: "https://github.com/lizalexandrita/Knowledge-Graph.git"
+        DESTINATION: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
+        SECRET_NAME: ${{ secrets.SSH_PRIVATE_KEY }}
