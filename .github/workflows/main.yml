@@ -1,16 +1,18 @@
 name: Mirror Repository
 
-on: [push]
-
+on: push
 jobs:
-  mirror:
+  repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: Configure Safe Directory
-      run: git config --global --add safe.directory /github/workspace
-    - name: Mirror Repository
+    - name: repo-sync
       uses: wei/git-sync@v1
       env:
-        SOURCE: "https://github.com/lizalexandrita/Knowledge-Graph.git"
-        DESTINATION: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
-        SECRET_NAME: ${{ secrets.SSH_PRIVATE_KEY }}
+        SOURCE_REPO: "https://github.com/lizalexandrita/Knowledge-Graph.git"
+        SOURCE_BRANCH: "main"
+        DESTINATION_REPO: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
+        DESTINATION_BRANCH: "main"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+
