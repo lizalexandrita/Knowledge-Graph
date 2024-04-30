@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   mirror:
-    runs-on: ubuntu-latest
+    runs-on: github
     steps:
     - name: Mirror Repository
       uses: wei/git-sync@v1
