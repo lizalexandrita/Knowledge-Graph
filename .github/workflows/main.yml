@@ -1,0 +1,14 @@
+name: Mirror Repository
+
+on: [push]
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror Repository
+      uses: wei/git-sync@v1
+      env:
+        SOURCE_REPO: "https://github.com/lizalexandrita/Knowledge-Graph.git"
+        DESTINATION_REPO: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
