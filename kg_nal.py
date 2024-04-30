@@ -9,6 +9,35 @@ from neo4j import GraphDatabase
 
 # Connection to Neo4j
 class Neo4jConnection:
+    """
+    Represents a connection to a Neo4j database.
+
+    Args:
+        uri (str): The URI of the Neo4j database.
+        user (str): The username for authentication.
+        pwd (str): The password for authentication.
+
+    Attributes:
+        __uri (str): The URI of the Neo4j database.
+        __user (str): The username for authentication.
+        __password (str): The password for authentication.
+        __driver (neo4j.Driver): The Neo4j driver object.
+
+    Methods:
+        close(): Closes the connection to the Neo4j database.
+        query(query, parameters=None, db=None): Executes a Cypher query on the Neo4j database.
+        show_databases(): Retrieves a list of all databases in the Neo4j instance.
+        delete_test_data(): Deletes all nodes with a 'test' property from the Neo4j database.
+        delete_all_data(): Deletes all nodes and relationships from the Neo4j database.
+        inspect_schema(): Retrieves the schema visualization of the Neo4j database.
+        get_properties(entity_type, entity_label): Retrieves the properties of nodes, relationships, or constraints in the Neo4j database.
+
+    Example usage:
+        conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+        conn.query("MATCH (n) RETURN n LIMIT 10")
+        conn.close()
+    """
+
     def __init__(self, uri, user, pwd):
         self.__uri = uri
         self.__user = user
@@ -20,10 +49,32 @@ class Neo4jConnection:
             print("Failed to create the driver:", e)
 
     def close(self):
+        """
+        Closes the connection to the Neo4j database.
+        """
         if self.__driver is not None:
             self.__driver.close()
 
     def query(self, query, parameters=None, db=None):
+        """
+        Executes a Cypher query on the Neo4j database.
+
+        Args:
+            query (str): The Cypher query to execute.
+            parameters (dict, optional): The parameters to pass to the query. Defaults to None.
+            db (str, optional): The name of the database to execute the query on. Defaults to None.
+
+        Returns:
+            list: The result of the query as a list of records.
+
+        Raises:
+            AssertionError: If the driver is not initialized.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            result = conn.query("MATCH (n) RETURN n LIMIT 10")
+            conn.close()
+        """
         assert self.__driver is not None, "Driver not initialized!"
         session = None
         response = None
@@ -35,18 +86,71 @@ class Neo4jConnection:
         return response
 
     def show_databases(self):
+        """
+        Retrieves a list of all databases in the Neo4j instance.
+
+        Returns:
+            list: The list of databases.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            databases = conn.show_databases()
+            conn.close()
+        """
         return self.query("SHOW DATABASES")
 
     def delete_test_data(self):
+        """
+        Deletes all nodes with a 'test' property from the Neo4j database.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            conn.delete_test_data()
+            conn.close()
+        """
         self.query("MATCH (n) WHERE n.test IS NOT NULL DETACH DELETE n")
 
     def delete_all_data(self):
+        """
+        Deletes all nodes and relationships from the Neo4j database.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            conn.delete_all_data()
+            conn.close()
+        """
         self.query("MATCH (n) DETACH DELETE n")
 
     def inspect_schema(self):
+        """
+        Retrieves the schema visualization of the Neo4j database.
+
+        Returns:
+            list: The schema visualization.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            schema = conn.inspect_schema()
+            conn.close()
+        """
         return self.query("CALL db.schema.visualization()")
 
     def get_properties(self, entity_type, entity_label):
+        """
+        Retrieves the properties of nodes, relationships, or constraints in the Neo4j database.
+
+        Args:
+            entity_type (str): The type of entity to retrieve properties for. Must be 'node', 'relationship', or 'constraint'.
+            entity_label (str): The label of the entity to retrieve properties for.
+
+        Raises:
+            ValueError: If the entity_type is invalid.
+
+        Example usage:
+            conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+            conn.get_properties('node', 'Person')
+            conn.close()
+        """
         assert self.__driver is not None, "Driver not initialized!"
         try:
             with self.__driver.session() as session:
@@ -102,10 +206,47 @@ class Neo4jConnection:
 
 # Graph functions
 class GraphGenerator:
+    """
+    Generates nodes and relationships in a Neo4j database based on a provided schema and data.
+
+    Args:
+        neo4j_conn (Neo4jConnection): The Neo4j connection object.
+
+    Attributes:
+        neo4j_conn (Neo4jConnection): The Neo4j connection object.
+
+    Methods:
+        execute(schema, data): Generates nodes and relationships in the Neo4j database based on the provided schema and data.
+        execute_from_json(json_path): Generates nodes and relationships in the Neo4j database based on a JSON file.
+
+    Example usage:
+        conn = Neo4jConnection("bolt://localhost:7687", "neo4j", "password")
+        generator = GraphGenerator(conn)
+        generator.execute(schema, data)
+        generator.execute_from_json("data.json")
+    """
+
     def __init__(self, neo4j_conn):
         self.neo4j_conn = neo4j_conn
 
     def execute(self, schema, data):
+        """
+        Generates nodes and relationships in the Neo4j database based on the provided schema and data.
+
+        Args:
+            schema (dict): A dictionary representing the schema of the nodes and relationships.
+            data (dict): A dictionary containing the data for the nodes and relationships.
+
+        Returns:
+            None
+
+        Raises:
+            None
+
+        Example usage:
+            generator = GraphGenerator(conn)
+            generator.execute(schema, data)
+        """
         try:
             # self.generate_constraints(schema)
             self.generate_nodes(schema, data)
@@ -114,12 +255,44 @@ class GraphGenerator:
             print("Execution had an error: ", e)
 
     def execute_from_json(self, json_path):
+        """
+        Generates nodes and relationships in the Neo4j database based on a JSON file.
+
+        Args:
+            json_path (str): The path to the JSON file containing the data.
+
+        Returns:
+            None
+
+        Raises:
+            None
+
+        Example usage:
+            generator = GraphGenerator(conn)
+            generator.execute_from_json("data.json")
+        """
         try:
             self.generate_from_json(json_path)
         except Exception as e:
             print("Execution had an error: ", e)
 
     def generate_from_json(self, json_path):
+        """
+        Generates nodes and relationships in the Neo4j database based on a JSON file.
+
+        Args:
+            json_path (str): The path to the JSON file containing the data.
+
+        Returns:
+            None
+
+        Raises:
+            None
+
+        Example usage:
+            generator = GraphGenerator(conn)
+            generator.generate_from_json("data.json")
+        """
         # Load the JSON data
         with open(json_path, 'r') as file:
             data = json.load(file)
@@ -187,32 +360,8 @@ class GraphGenerator:
         Generates nodes in a Neo4j database based on the provided schema and data.
 
         Args:
-            schema (dict): A dictionary representing the schema of the nodes. It should have the following structure:
-                {
-                    'nodes': [
-                        {
-                            'labels': ['label1', 'label2', ...],  # A list of labels for the node
-                            'properties': ['prop1', 'prop2', ...]  # A list of properties for the node
-                        },
-                        ...
-                    ]
-                }
-            data (dict): A dictionary containing the data for the nodes. It should have the following structure:
-                {
-                    'label1': [
-                        {
-                            'id': 'node_id1',  # A unique identifier for the node
-                            'prop1': 'value1',  # Property values for the node
-                            'prop2': 'value2',
-                            ...
-                        },
-                        ...
-                    ],
-                    'label2': [
-                        ...
-                    ],
-                    ...
-                }
+            schema (dict): A dictionary representing the schema of the nodes.
+            data (dict): A dictionary containing the data for the nodes.
 
         Returns:
             None
@@ -221,42 +370,8 @@ class GraphGenerator:
             None
 
         Example usage:
-            schema = {
-                'nodes': [
-                    {
-                        'labels': ['Person'],
-                        'properties': ['name', 'age']
-                    },
-                    {
-                        'labels': ['Company'],
-                        'properties': ['name', 'location']
-                    }
-                ]
-            }
-
-            data = {
-                'Person': [
-                    {
-                        'id': 'person1',
-                        'name': 'John Doe',
-                        'age': 30
-                    },
-                    {
-                        'id': 'person2',
-                        'name': 'Jane Smith',
-                        'age': 25
-                    }
-                ],
-                'Company': [
-                    {
-                        'id': 'company1',
-                        'name': 'ABC Corp',
-                        'location': 'New York'
-                    }
-                ]
-            }
-
-            generate_nodes(schema, data)
+            generator = GraphGenerator(conn)
+            generator.generate_nodes(schema, data)
         """ 
         for node in schema['nodes']:
             node_label = node['labels'][0]  # Assuming each node dictionary has a 'labels' list with at least one label
