@@ -9,15 +9,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Setup SSH Key
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      run: |
-        mkdir -p ~/.ssh
-        echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-
     - name: Configure Safe Directory
       run: git config --global --add safe.directory /github/workspace
 
@@ -26,4 +17,4 @@ jobs:
       env:
         SOURCE: "https://github.com/lizalexandrita/Knowledge-Graph.git"
         DESTINATION: "https://github.com/new-atlantis-labs/Knowledge-Graph.git"
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SECRET_NAME: ${{ secrets.SSH_PRIVATE_KEY }}
