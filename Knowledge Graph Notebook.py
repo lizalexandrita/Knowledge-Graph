@@ -165,7 +165,7 @@ for reaction in reactions:
             rel_props = {
                 'type': 'LINKED_TO'
             }
-            genn.delete_relationship_by_id(reaction_id, linked_reaction, 'LINKED_TO') #, rel_props, direction="")
+            genn.merge_relationship_from_node_to_node_by_id(reaction_id, linked_reaction, 'LINKED_TO', rel_props)
     except Exception as e:
         pass  # print("Execution Exception: ", e)  
 

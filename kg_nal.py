@@ -410,7 +410,7 @@ class GraphGenerator:
             print("Execution had an error: ", e)
         
 
-    def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}, direction=""):
+    def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}):
         """
         Creates a relationship between two nodes in the Neo4j database by type.
 
@@ -429,7 +429,7 @@ class GraphGenerator:
                 f"""
                 MATCH (a), (b)
                 WHERE a.id = $from_node_id AND b.id = $to_node_id
-                MERGE (a)-[r:%s]-{direction}(b)
+                MERGE (a)-[r:%s]->(b)
                 SET r += $props
                 """ % rel_type,
                 {"from_node_id": from_node_id, "to_node_id": to_node_id, "props": rel_props},
