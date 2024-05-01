@@ -387,6 +387,13 @@ class GraphGenerator:
                     # Assuming node_data is a dictionary with property values, including the 'id'
                     self.neo4j_conn.query(cypher_query, parameters=node_data)
 
+    def generate_constraints(self, schema):
+        for constraint_name, constraint_data in schema['constraints'].items():
+            label = constraint_data['label']
+            property_name = constraint_data['property']
+            cypher_query = f"CREATE CONSTRAINT {constraint_name} IF NOT EXISTS FOR (n:{label}) REQUIRE n.{property_name} IS UNIQUE;"
+            self.neo4j_conn.query(cypher_query)
+
     def merge_node_from_dict(self, node_label: str, node_dict: dict={}):
         """
         Creates a node in the Neo4j database from a dictionary.
@@ -409,7 +416,6 @@ class GraphGenerator:
         except Exception as e:
             print("Execution had an error: ", e)
         
-
     def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}):
         """
         Creates a relationship between two nodes in the Neo4j database by type.
@@ -491,13 +497,6 @@ class GraphGenerator:
             print("Execution had an error: ", e)
 
     
-
-    def generate_constraints(self, schema):
-        for constraint_name, constraint_data in schema['constraints'].items():
-            label = constraint_data['label']
-            property_name = constraint_data['property']
-            cypher_query = f"CREATE CONSTRAINT {constraint_name} IF NOT EXISTS FOR (n:{label}) REQUIRE n.{property_name} IS UNIQUE;"
-            self.neo4j_conn.query(cypher_query)
 
 
 # Data Parsing

@@ -151,7 +151,7 @@ for reaction in reactions:
         genn.merge_relationship_from_node_to_node_by_id(compound_id, reaction_id, 'PARTICIPATES_IN', rel_props)
 """
 
-
+"""
 # Create relationships between reaction nodes
 # Access the database and parse all the reactions
 reactions = conn.query("MATCH (r:Reaction) RETURN r.id AS reaction_id, r.linked_reaction AS linked_reaction")
@@ -168,7 +168,7 @@ for reaction in reactions:
             genn.merge_relationship_from_node_to_node_by_id(reaction_id, linked_reaction, 'LINKED_TO', rel_props)
     except Exception as e:
         pass  # print("Execution Exception: ", e)  
-
+"""
 
 
 
@@ -189,6 +189,8 @@ for reaction in reactions:
     except Exception as e:
         pass  # print("Execution Exception: ", e)
     """
+
+
 
 # Close the connection
 # conn.close()
