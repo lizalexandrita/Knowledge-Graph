@@ -151,7 +151,7 @@ for reaction in reactions:
         genn.merge_relationship_from_node_to_node_by_id(compound_id, reaction_id, 'PARTICIPATES_IN', rel_props)
 """
 
-
+"""
 # Create relationships between reaction nodes
 # Access the database and parse all the reactions
 reactions = conn.query("MATCH (r:Reaction) RETURN r.id AS reaction_id, r.linked_reaction AS linked_reaction")
@@ -168,6 +168,26 @@ for reaction in reactions:
             genn.merge_relationship_from_node_to_node_by_id(reaction_id, linked_reaction, 'LINKED_TO', rel_props)
     except Exception as e:
         pass  # print("Execution Exception: ", e)  
+"""
+
+# Parse the reaction equation and create relationships between compound nodes
+
+# Access the database and parse all the reactions
+reactions = conn.query("MATCH (r:Reaction) RETURN r.id AS reaction_id, r.equation AS equation")
+
+# Create relationships between compound and reaction nodes
+for reaction in reactions:
+    try:
+        substrates, products = ParseData.parse_reaction_equation(reaction['equation'])
+        reaction_id = reaction['reaction_id']
+        for substrate, stoichiometry in substrates:
+            genn.merge_relationship_from_node_to_node_by_id(substrate, reaction_id, 'SUBSTRATE_OF', {"stoichiometry": stoichiometry})
+        for product, stoichiometry in products:
+            genn.merge_relationship_from_node_to_node_by_id(product, reaction_id, 'PRODUCT_OF', {"stoichiometry": stoichiometry})
+    except Exception as e:
+        pass  # print("Execution Exception: ", e)
+
+
 # Close the connection
 # conn.close()
 

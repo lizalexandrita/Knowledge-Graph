@@ -480,6 +480,55 @@ class GraphGenerator:
 # Data Parsing
 class ParseData:
 
+    def parse_reaction_equation(equation):
+        """
+        Parses the reaction equation from a given dictionary and separates substrates and products.
+
+        This function supports different reaction symbols ('<=>', '=>', '<=') to distinguish
+        between substrates and products. It extracts compound IDs and their stoichiometries from both sides.
+
+        Args:
+            reaction_dict (dict): A dictionary containing the reaction data with key 'equation'.
+
+        Returns:
+            tuple[list[tuple[str, float]], list[tuple[str, float]]]: Two lists containing tuples of compound IDs
+            and stoichiometries for substrates and products, respectively.
+
+        Raises:
+            ValueError: If the reaction format is invalid or unsupported.
+        """
+        substrates, products = [], []
+
+        # Splitting the equation into substrates and products
+        if "<=>" in equation:
+            left_side, right_side = equation.split("<=>")
+        elif "=>" in equation:
+            left_side, right_side = equation.split("=>")
+        elif "<=" in equation:
+            right_side, left_side = equation.split("<=")
+        else:
+            # Invalid or unsupported reaction format
+            return substrates, products
+
+        def parse_compounds(compound_list):
+            parsed_compounds = []
+            for part in compound_list.split("+"):
+                compound_info = part.strip().split(" ")
+                compound_id = compound_info[1].split("[")[
+                    0
+                ]  # Remove '[0]' from the compound ID
+                stoichiometry_str = compound_info[0][1:]  # Extract the stoichiometry part
+                stoichiometry = float("".join(filter(str.isdigit, stoichiometry_str)))
+                parsed_compounds.append((compound_id, stoichiometry))
+            return parsed_compounds
+
+        # Extracting compound IDs and coefficients from each side
+        substrates = parse_compounds(left_side)
+        products = parse_compounds(right_side)
+
+        return substrates, products
+
+
     def extract_node_from_json(file_path: str, n: int = None) -> list[dict]:
         """
         Extracts data of a node from a JSON file and returns a list of dictionaries.
