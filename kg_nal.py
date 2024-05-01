@@ -410,7 +410,7 @@ class GraphGenerator:
             print("Execution had an error: ", e)
         
 
-    def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}):
+    def merge_relationship_from_node_to_node_by_id(self, from_node_id: str, to_node_id: str, rel_type: str, rel_props: dict={}, direction=""):
         """
         Creates a relationship between two nodes in the Neo4j database by type.
 
@@ -426,10 +426,10 @@ class GraphGenerator:
         """
         try:
             self.neo4j_conn.query(
-                """
+                f"""
                 MATCH (a), (b)
                 WHERE a.id = $from_node_id AND b.id = $to_node_id
-                MERGE (a)-[r:%s]->(b)
+                MERGE (a)-[r:%s]-{direction}(b)
                 SET r += $props
                 """ % rel_type,
                 {"from_node_id": from_node_id, "to_node_id": to_node_id, "props": rel_props},
@@ -437,6 +437,29 @@ class GraphGenerator:
         except Exception as e:
             print("Execution had an error: ", e)
 
+    def delete_relationship_by_id(self, from_node_id: str, to_node_id: str, rel_type: str):
+        """
+        Deletes a relationship between two nodes in the Neo4j database by type and IDs.
+
+        Args:
+            from_node_id (str): The ID of the source node.
+            to_node_id (str): The ID of the target node.
+            rel_type (str): The type of the relationship.
+
+        Returns:
+            None
+        """
+        try:
+            self.neo4j_conn.query(
+                """
+                MATCH (a)-[r:%s]->(b)
+                WHERE a.id = $from_node_id AND b.id = $to_node_id
+                DELETE r
+                """ % rel_type,
+                {"from_node_id": from_node_id, "to_node_id": to_node_id},
+            )
+        except Exception as e:
+            print("Execution had an error: ", e)
     
     def merge_relationship_from_node_to_node_by_property(self, from_node_label: str, to_node_label: str, from_property_name: str, to_property_name: str, rel_type: str, rel_props: dict):
         """
