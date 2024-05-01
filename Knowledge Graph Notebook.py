@@ -167,7 +167,7 @@ for reaction in reactions:
             }
             genn.merge_relationship_from_node_to_node_by_id(reaction_id, linked_reaction, 'LINKED_TO', rel_props)
     except Exception as e:
-        print("Execution Exception: ", e)  
+        pass  # print("Execution Exception: ", e)  
 # Close the connection
 # conn.close()
 
