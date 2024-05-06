@@ -496,7 +496,7 @@ class GraphGenerator:
         except Exception as e:
             print("Execution had an error: ", e)
 
-    
+
 
 
 # Data Parsing
@@ -522,26 +522,11 @@ class ParseData:
         substrates, products = [], []
 
         # Splitting the equation into substrates and products
-        if "<=>" in equation:
-            left_side, right_side = equation.split("<=>")
-        elif "=>" in equation:
-            left_side, right_side = equation.split("=>")
-        elif "<=" in equation:
-            right_side, left_side = equation.split("<=")
-        else:
-            # Invalid or unsupported reaction format
-            return substrates, products
+        reaction_symbols = ["<=>", "=>", "<="]
+        left_side, right_side = next((equation.split(symbol) for symbol in reaction_symbols if symbol in equation), (None, None))
 
         def parse_compounds(compound_list):
-            parsed_compounds = []
-            for part in compound_list.split("+"):
-                compound_info = part.strip().split(" ")
-                compound_id = compound_info[1].split("[")[
-                    0
-                ]  # Remove '[0]' from the compound ID
-                stoichiometry_str = compound_info[0][1:]  # Extract the stoichiometry part
-                stoichiometry = float("".join(filter(str.isdigit, stoichiometry_str)))
-                parsed_compounds.append((compound_id, stoichiometry))
+            parsed_compounds = [(part.strip().split(" ")[1].split("[")[0], float("".join(filter(str.isdigit, part.strip().split(" ")[0][1:])))) for part in compound_list.split("+")]
             return parsed_compounds
 
         # Extracting compound IDs and coefficients from each side
@@ -617,19 +602,14 @@ class ParseData:
             'relationships': []
         }
 
-        for node in json_data['nodes']:
-            label = node['labels'][0]  # Assuming one label per node
-            schema['nodes'][label] = node['properties'].keys()
+        schema['nodes'] = [{node['labels'][0]: node['properties'].keys()} for node in json_data['nodes']]
 
-        for rel in json_data['relationships']:
-            # Assuming 'type' is provided in the relationships
-            if 'type' in rel and rel['type']:
-                schema['relationships'].append({
-                    'type': rel['type'],
-                    'from': rel['fromId'],  # we can turn into ID again, my issue was readability for QA
-                    'to': rel['toId'],
-                    'properties': rel['properties'].keys()
-                })
+        schema['relationships'] = [{
+            'type': rel['type'],
+            'from': rel['fromId'],
+            'to': rel['toId'],
+            'properties': rel['properties'].keys()
+        } for rel in json_data['relationships'] if 'type' in rel and rel['type']]
 
         return schema
 
