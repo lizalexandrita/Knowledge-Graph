@@ -1,1 +1,5 @@
-{"uri": "bolt://localhost:7687", "user": "neo4j", "password": "neo4j@test_db"}
+{
+    "uri": "neo4j+s://n4j.newatlantis.dev:7687",
+    "user": "neo4j",
+    "password": "691723fg3480dkml2i38lkdsp923"
+}
